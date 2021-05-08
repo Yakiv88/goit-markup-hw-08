@@ -21,8 +21,8 @@
     width: 1200px;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    // justify-content: center;
   }
 }
 
@@ -41,8 +41,15 @@
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.19px;
+    height: 31px;
+    margin-top: 10px;
+  }
 }
-
 .logo-link {
   display: block;
 }
@@ -61,6 +68,11 @@
   height: 100%;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: left;
+    // align-items: flex-start;
   }
   margin-bottom: 60px;
 }
@@ -71,13 +83,16 @@
   display: block;
   margin-bottom: 8px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 40px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--header-color);
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 /*------ adresss конец-------*/
@@ -95,6 +110,16 @@
   transform: scale(1);
   margin-bottom: 8px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 9px;
+  }
+}
+
+.tel {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .menu-contacts_link:hover,

@@ -427,7 +427,6 @@ p {
   width: 100%;
   max-width: 450px;
   height: 100%;
-  padding-top: 3px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -436,11 +435,14 @@ p {
   .form-wrapper {
     max-width: 570px;
     margin-left: 93px;
+    height: 86px;
+    margin-top: 10px;
   }
 }
 
 /*------ Заголовок ПРИСОЕДИНЯЙТЕСЬ-------*/
 .form-wrapper_p {
+  line-height: 1.14;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -488,6 +490,7 @@ p {
   .input-footer {
     margin-right: 12px;
     margin-bottom: 0px;
+    max-width: 358px;
   }
 }
 
@@ -827,11 +830,10 @@ input[type='email']::placeholder {
 
 @media screen and (max-width: 767.98px) {
   .mobile-window {
-    position: absolute;
     top: 0%;
     left: 0;
     width: 100%;
-    height: 796px;
+    height: 100vh;
   }
 }
 
@@ -886,6 +888,8 @@ input[type='email']::placeholder {
 }
 
 .mob-contacts {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1798,8 +1802,7 @@ input[type='email']::placeholder {
     width: 1200px;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -1815,6 +1818,17 @@ input[type='email']::placeholder {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-position {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.19px;
+    height: 31px;
+    margin-top: 10px;
+  }
 }
 
 .logo-link {
@@ -1846,13 +1860,19 @@ input[type='email']::placeholder {
   display: block;
   margin-bottom: 8px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 40px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--header-color);
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 9px;
+  }
 }
 
 /*------ adresss конец-------*/
@@ -1868,6 +1888,19 @@ input[type='email']::placeholder {
   transform: scale(1);
   margin-bottom: 8px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-contacts_link {
+    text-align: left;
+    margin-bottom: 9px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tel {
+    margin-bottom: 0;
+  }
 }
 
 .menu-contacts_link:hover,
@@ -1897,6 +1930,7 @@ input[type='email']::placeholder {
     margin-bottom: 0px;
     margin-left: 70px;
     margin-right: 0;
+    margin-top: 10px;
   }
 }
 
