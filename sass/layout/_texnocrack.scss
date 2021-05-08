@@ -1,0 +1,155 @@
+/*--------------ТЕХНОКРЯК-НАЧАЛО------------- */
+.texnocrack {
+  display: block;
+  padding-top: 0;
+}
+/*--------------UI------------- */
+.texnocrack_grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+/*--------------LI------------- */
+
+.texnocrack_item {
+  // border: rgba(33, 150, 243, 0);
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  @media screen and (max-width: 767.98px) {
+    flex-basis: calc((100% - 30px) / 1);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+/*--------------ССЫЛКА ОБЕРТКА КАРТОЧКИ ------------- */
+
+.texnocrack_link {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.texnocrack_link:hover,
+.texnocrack_link:focus {
+  outline: none;
+  cursor: pointer;
+  color: var(--header-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
+}
+/*--------------КОНТЕЙНЕР ОБЕРТКА КАРТОЧКИ------------ */
+
+.texnocrack_image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/*-------------IMG------------- */
+
+.texnocrack_image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*-------------КОНТЕЙНЕР screen----------- */
+
+.texnocrack_screen-wrapper {
+  position: absolute;
+  content: '';
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translate(0%, 0%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translatey(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texnocrack_item:hover .texnocrack_screen-wrapper {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translatex(0%);
+}
+
+/*-------------ОКНО С ТЕКСТОМ ТЕХНОКРЯКА-screen------------ */
+
+.texnocrack_screen {
+  display: block;
+  width: 402px;
+  height: 140px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    width: 306px;
+    height: 196px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 322px;
+    height: 168px;
+  }
+}
+
+/* ------блок контента карточек----------*/
+.texnocrack_trumb {
+  display: block;
+  background-color: var(--header-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  width: 100%;
+  height: 100%;
+}
+.texnocrack_h {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--h-color);
+  @media screen and (min-width: 768px) {
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 1200px) {
+    letter-spacing: 0.06em;
+  }
+}
+
+.texnocrack_p {
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--brand-letter);
+}
+/* ------блок контента карточек-конец---------*/
+
+/*--------------ТЕХНОКРЯК-КОНЕЦ------------- */

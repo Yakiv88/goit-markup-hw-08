@@ -1,0 +1,96 @@
+/* --------ЗАГОЛОВОК ГЕРОЯ H1 начало------- */
+.hero__content {
+  display: block;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  width: auto;
+  height: 84px;
+  @media screen and (min-width: 320px) {
+    width: 290px;
+    height: 84px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 360px;
+    height: 84px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 360px;
+    height: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    height: 120px;
+    padding: 0 30px;
+  }
+}
+
+.hero_title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+  @media screen and (max-width: 479.98px) {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+/* --------ЗАГОЛОВОК ГЕРОЯ H1 КОНЕЦ------- */
+
+/* -------заголовок секции направления------ */
+.directions_title {
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* -------заголовок секции конец------ */
+
+/* -----ЗАГОЛОВОК КОМАНДЫ --------- */
+.team_title {
+  display: block;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--h-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+/* -----ЗАГОЛОВОК КОМАНДЫ КОНЕЦ--------- */
+
+/* -----ЗАГОЛОВОК ПОСТОЯНННЫЕ КЛИЕНТЫ НАЧАЛО--------- */
+.clients_title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 1.18;
+  font-style: normal;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
+/* -----ЗАГОЛОВОК ПОСТОЯНННЫЕ КЛИЕНТЫ КОНЕЦ--------- */

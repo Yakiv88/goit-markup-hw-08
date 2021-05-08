@@ -1,0 +1,96 @@
+/* --------header-contact-conteiner--------- */
+
+.contacts {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: 305px;
+  }
+  align-items: center;
+}
+
+/* ---------ссылки---1------ */
+
+.contact_link {
+  color: var(--brand-letter);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_link--first {
+  margin-left: 0px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+/* ---------ссылки---2------ */
+
+/* ---------Иконки контактов--------- */
+.contacts_icon {
+  margin-right: 10px;
+  display: block;
+  fill: #afb1b8;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+.contact_link:hover .contacts_icon,
+.contact_link:focus .contacts_icon {
+  fill: var(--blue-color);
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
+}
+
+.contact_link:hover,
+.contact_link:focus {
+  color: #2196f3;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
+}
+
+.contact_link:hover .contacts_icon,
+.contact_link:focus .contacts_icon {
+  fill: var(--blue-color);
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
+}
+
+.contact_link:hover,
+.contact_link:focus {
+  color: #2196f3;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
+}
+
+/* --------------------------ИКОНКИ КОНЕЦ--------------------- */
+/* --------header-contact-конец--------- */

@@ -1,0 +1,60 @@
+body {
+  background-color: var(--brand-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+.li-nd li,
+.auth-nav li,
+.site-nav li {
+  list-style: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* общие на ссылки */
+// .link {
+//   text-decoration: none;
+//   color: inherit;
+// }
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--link-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--blue-color);
+  margin-left: 0px;
+  margin-right: 93px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

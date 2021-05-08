@@ -1,0 +1,82 @@
+/* ----------СЕКЦИЯ НАПРАВЛЕНИЯ НАЧАЛО------- */
+
+.directions {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  background-color: var(--header-color);
+  padding-bottom: 94px;
+}
+
+.directions_container {
+  display: block;
+  padding-top: 0px;
+}
+
+/* -------меню направлений начало------ */
+.directions_menu {
+  display: flex;
+  flex-wrap: wrap;
+  /* display: block; */
+  padding-left: 0px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.directions_item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+  position: relative;
+}
+
+/* --------КНОПКИ НА СЕКЦИИ направления НАЧАЛО-------- */
+
+.directions_list-item {
+  content: '';
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 370px;
+  height: 294px;
+}
+
+.directions_icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.directions_content {
+  padding: auto;
+  display: block;
+  position: relative;
+  position: absolute;
+  content: '';
+  left: 0%;
+  bottom: 0%;
+  width: 370px;
+  height: 70px;
+  transform: translate(0%, 0%);
+  border: none;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.directions_p {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+/* ----------СЕКЦИЯ НАПРАВЛЕНИЯ КОНЕЦ------- */

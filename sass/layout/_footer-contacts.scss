@@ -1,0 +1,107 @@
+/* СЕКЦИЯ ПОДВАЛ */
+
+.footer {
+  background-color: var(--hero-footer);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// -----ЛОГОТИП ФУТЕРА НАЧАЛО----------
+
+.footer_container-logo {
+  display: block;
+}
+
+/* логотип футера ссылка*/
+
+.logo-position {
+  font-size: 24px;
+  line-height: 1.17px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-link {
+  display: block;
+}
+
+.logo_label {
+  color: var(--header-color);
+}
+/* ---логотип конец----- */
+// -----ЛОГОТИП ФУТЕРА КОНЕЦ----------
+
+.footer-contacts {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 231px;
+  height: 100%;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+  margin-bottom: 60px;
+}
+
+/*------ adresss-------*/
+
+.address {
+  display: block;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------ adresss конец-------*/
+
+/*------ меню контактов-------*/
+
+.menu-contacts_link {
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transform: scale(1);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.menu-contacts_link:hover,
+.menu-contacts_link:focus {
+  color: var(--blue-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.1);
+}
+
+/*------ меню контактов конец-------*/

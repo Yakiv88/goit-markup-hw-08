@@ -1,0 +1,77 @@
+/*------ ИКОНКИ ФУТЕРА НАЧАЛО-------*/
+.footer-icons {
+  // margin-left: 70px;
+  display: flex;
+  width: 206px;
+  height: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  fill: var(--header-color);
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    margin-left: 70px;
+    margin-right: 0;
+  }
+}
+
+/*------ Заголовок ПРИСОЕДИНЯЙТЕСЬ-------*/
+
+.footer-icons_p {
+  display: block;
+  width: 100%;
+}
+.footer-icons-title {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-color);
+  @media screen and (max-width: 1199.98px) {
+    text-align: center;
+  }
+}
+/*------ Заголовок ПРИСОЕДИНЯЙТЕСЬ КОНЕЦ-------*/
+
+/*------МЕНЮ ИКОНОК-------*/
+.menu-icons {
+  display: flex;
+}
+
+.menu-icons_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+
+.menu-icons_card-first {
+  margin-left: 0px;
+}
+
+.menu-icons_card:hover,
+.menu-icons_card:focus {
+  fill: var(--header-color);
+  background-color: var(--blue-color);
+
+  border: 1px solid var(--blue-color);
+  border-radius: 50%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.2);
+}
+
+/*------МЕНЮ ИКОНОК-КОНЕЦ------*/
